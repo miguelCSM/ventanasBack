@@ -13,6 +13,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Primera Vista", displayMode: .inline)
+            .background(Color(red:0.8, green: 0.2,blue: 0.4))
         }
     }
 }
@@ -46,8 +47,22 @@ struct ThirdView: View {
         .navigationBarTitle("Tercera Vista", displayMode: .inline)
     }
 }
+
+struct ContentView2: View {
+    var body: some View {
+        ZStack {
+            Color(red: 0.9, green: 0.2, blue: 0.9)
+                .edgesIgnoringSafeArea(.all)
+            
+            VStack {
+                // TODO
+            }
+        }
+    }
+}
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView2()
     }
 }
